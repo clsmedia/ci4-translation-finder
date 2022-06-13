@@ -1,5 +1,13 @@
 {
     "name": "clsmedia/ci4-translation-finder",
+    "description": "Translation strings finder for CodeIgniter 4.",
+    "keywords": [
+		"codeigniter",
+		"codeigniter 4",
+		"translations",
+                "localisation",
+                "lang"
+	],
     "type": "library",
     "require": {
        "codeigniter4/framework": "^4"
@@ -11,8 +19,9 @@
     },
     "authors": [
         {
-            "name": "Adam Skorupka, CLS Media",
-            "email": "adam.skorupka@gmail.com"
+            "name": "Adam Skorupka",
+            "email": "adam.skorupka@gmail.com",
+            "role": "Developer"
         }
     ]
 }
