@@ -2,7 +2,7 @@
     "name": "clsmedia/ci4-translation-finder",
     "type": "library",
     "require": {
-        "codeigniter4/codeigniter4": "dev-develop",
+       "codeigniter4/framework": "dev-master",
     },
     "autoload": {
         "psr-4": {
