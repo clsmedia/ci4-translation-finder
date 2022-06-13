@@ -9,6 +9,7 @@
                 "lang"
 	],
     "type": "library",
+    "license": "MIT",
     "require": {
        "codeigniter4/framework": "^4"
     },
