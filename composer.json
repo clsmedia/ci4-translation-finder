@@ -6,7 +6,7 @@
     },
     "autoload": {
         "psr-4": {
-            clsmedia\\translation-finder\\": "src/"
+            "clsmedia\\translation-finder\\": "src/"
         }
     },
     "authors": [
