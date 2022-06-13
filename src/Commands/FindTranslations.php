@@ -1,7 +1,6 @@
 <?php
 
-
-namespace clsmedia\translations;
+namespace clsmedia\translations\Commands;
 
 use CodeIgniter\CLI\BaseCommand;
 use CodeIgniter\CLI\CLI;
