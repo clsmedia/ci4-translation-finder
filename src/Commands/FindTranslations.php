@@ -26,9 +26,6 @@ class FindTranslations extends BaseCommand
         if (! count($this->getTranslationStrings()))
         {
             CLI::newLine();
-//            CLI::write("|-----Ooops!-----|");
-//            CLI::write("| Nothing found! |", 'white', 'red');
-//            CLI::write("|----------------|");
             $thead = ['Ooops!'];
             $tbody = [
                 ['Nothing found! Make some translation strings first'],
@@ -110,13 +107,13 @@ class FindTranslations extends BaseCommand
 
     public function parseLine($line)
     {
-        $pattern = "~lang\(['][^']*?[']\)~";
+        $pattern = "~ lang\(([\'\"]([^\'\"]+)[\'\"])[)\]];? ~";
 
         $result = array();
         if (preg_match($pattern, $line, $match)) {
             $string = substr($match[0], strpos($match[0], "(") + 1);
             $string = substr($string, 0, strpos($string, ")"));
-            $string = str_replace("'", '', $string);
+            $string = str_replace(['"',"'"], "", $string);
             $result[] = $string;
         }
         return $result;
