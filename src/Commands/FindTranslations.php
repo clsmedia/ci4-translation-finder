@@ -107,7 +107,7 @@ class FindTranslations extends BaseCommand
 
     public function parseLine($line)
     {
-        $pattern = "~ lang\(([\'\"]([^\'\"]+)[\'\"])[)\]];? ~";
+        $pattern = "~lang\(([\'\"]([^\'\"]+)[\'\"])[)\]];?~";
 
         $result = array();
         if (preg_match($pattern, $line, $match)) {
