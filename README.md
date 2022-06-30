@@ -8,7 +8,7 @@ Translation strings finder for CodeIgniter 4
 `php spark translations:find`
 
 # Usage
-As soon as the package is added to the project, you can start using it to find strings for translation. To find all `lang()` parameters in application files use CLI `php spark translations:find`
+As soon as the package is added to the project, you can start using it to find strings for translation. To find all `lang()` arguments in application files use CLI `php spark translations:find`
 
 Example result of command execution:
 
